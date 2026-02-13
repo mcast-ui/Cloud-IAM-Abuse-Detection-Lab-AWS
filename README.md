@@ -20,9 +20,13 @@ This project simulates real-world cloud attack scenarios in AWS and Azure enviro
 * Automate response
 
 ## Tool Requirements
-*AWS account
+* AWS account
 * VPC
 * EC2 instance
 * S3 bucket
 * IAM users
 * CloudTrail
+
+## Architecture Diagram
+<img width="1137" height="689" alt="Screenshot 2026-02-13 023154" src="https://github.com/user-attachments/assets/ea9fc078-fe6d-40b3-8866-4eb2379e55f9" />
+
