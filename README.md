@@ -10,7 +10,7 @@ This project simulates real-world cloud attack scenarios in AWS and Azure enviro
 * Using detection logic, log source and alert severity
 * Automation contain Bash reposnce scripts
 * Create Threat Model
-* Document
+* Document my process
 ### Key Features:
 * Build a small AWS environment
 * Create risky IAM permissions
