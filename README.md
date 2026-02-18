@@ -30,3 +30,29 @@ This project simulates real-world cloud attack scenarios in AWS and Azure enviro
 ## Architecture Diagram
 <img width="1137" height="689" alt="Screenshot 2026-02-13 023154" src="https://github.com/user-attachments/assets/ea9fc078-fe6d-40b3-8866-4eb2379e55f9" />
 
+## What is a VPC?
+* A Virtual Private Network is a virtual networking environment in AWS that manages everything we do with networking. Configureation of the VPC determines how we connect different pieces of our infrastructure together and how we can connect it to the internet.
+* Without VPC:
+  * Everything would be a shared network
+  * Wouldn't be able to control isolation
+* With VPC:
+  * I can control who talks to what
+  * Design segmentation
+  * Create network boundaries
+
+## Creating a VPC
+1. Log into AWS console
+2. search for VPC
+3. Create VPC:
+   * Choose VPC only
+   * Name tag : `cloud-lab-vpc`
+   * IPv4 CIDR block: `10.0.0.0/16`
+   * Leave everything as default
+4. Click Create VPC
+
+### VPC details
+* IPv4 CIDR block: `10.0.0.0/16` defines the total IP address space my cloud network can use
+  * 65,536 possible private IP addresses
+  * Full control over segmentation
+
+
