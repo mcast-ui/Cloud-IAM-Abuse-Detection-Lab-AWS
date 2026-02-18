@@ -54,5 +54,31 @@ This project simulates real-world cloud attack scenarios in AWS and Azure enviro
 * IPv4 CIDR block: `10.0.0.0/16` defines the total IP address space my cloud network can use
   * 65,536 possible private IP addresses
   * Full control over segmentation
+ 
+## What is a Subnet
+* As shown in my architecture diagram a subnet is a smaller section in the VPC.
+
+### Public Subnet
+* What makes this public is that it routes to the internet gateway
+* Instances inside can receive public IP's
+* Public subnets include:
+  * Web servers
+  * Load Balancers
+  * Bastion Hosts
+* Security risk:
+  * Anything here is exposed
+  * Will restrict SSH to My IP
+  
+### Private Subnet
+* No public IP
+* No internet route
+* Private subnet includes internal-only systems such as:
+  * Databases
+  * Internal APIs
+  * Backend services
+* Security princinple **Zero Trust Network Access (ZTNA) Framework**:
+  * Never expose what doesn't need internet access (**Network Segmentation**)
+ 
+
 
 
